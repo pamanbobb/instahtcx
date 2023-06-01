@@ -1,0 +1,207 @@
+<div class="d-flex justify-content-between mb-3 mt-4 text-uppercase">
+	<div class="me-auto mt-1 ">Jumlah : <span class="jumlah">0</span> | Null : <span class="nulled">0</span> | Sukses : <span class="sukses">0</span> | Gagal : <span class="gagal">0</span>
+	</div>
+	<div>
+		<div class="input-group">
+			<select class="form-select igtools p-1 text-uppercase" style="width:130px;">
+				<option selected>IG Tools</option>
+				<option value="sessionid">Get Session</option>
+				<option value="follow">Follow</option>
+				<option value="likeuid">Like</option>
+				<option value="commentuid">Comment</option>
+				<option value="dmpeople">DM People</option>
+				<option value="dmgroup">DM Group</option>
+				<option value="create">Create</option>
+			</select>
+			<input type="number" class="form-control delayed" style="width:70px;" placeholder="Delay" value="10">
+			<input type="text" class="form-control create_account" style="width:70px;" placeholder="Create Account" value="50" readonly>
+			<div class="btn-group" role="group">
+				<button class="btn btn-md inbtn toolkit">tamper</button>
+				<button class="btn btn-md metu inbtn">metu</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="card shadow mb-2">
+	<div class="card-header py-3 text-uppercase text-center h5">
+		<i class="fa-solid fa-user"></i>
+		<span class="uidUser">UID</span>
+	</div>
+	<div class="card-body">
+		<div class="contain">
+			<div class="profile">
+				<div class="profile-image">
+					<img src="https://i.ibb.co/sq8KkFS/profile-blank.jpg" width="152" height="152" class="imagelow" data-toggle="modal" data-target="#editphoto">
+				</div>
+				<div class="profile-user-settings">
+					<h1 class="profile-user-name inusername">Username</h1>
+					<button class="editbtn profile-edit-btn edit_profile" data-toggle="modal" data-target="#editprofile">Edit Profile</button>
+					<span class="editbtn profile-settings-btn" aria-label="profile settings">
+						<i class="fas fa-cog" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="profile-stats">
+					<ul>
+						<li>
+							<span class="profile-stat-count posting">0</span> posts
+						</li>
+						<li>
+							<span class="profile-stat-count followers">0</span> followers
+						</li>
+						<li>
+							<span class="profile-stat-count following">0</span> following
+						</li>
+					</ul>
+				</div>
+				<div class="profile-bio">
+					<span class="profile-real-name realname">NAMA FULL NAME</span>
+					<span class="profile-bio-quote quote">PLEASE WAIT... 📷✈️🏕️</span>
+					<a href="#" target="_blank" class="highlink">
+						<span class="profile-bio-link biolink">BIO LINK MU</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="card shadow">
+	<div class="card-header py-3 text-uppercase h5 text-center">
+		<div class="d-flex bd-highlight">
+			<div class="mr-auto p-2 bd-highlight">
+				<i class="fas fa-users"></i> user tools
+			</div>
+			<div class="p-2 bd-highlight showSelect">
+				<div class="loadUserChoose">
+					<div class="radio radio-info radio-inline">
+						<input type="radio" id="inlineRadio1" value="sendDMtext" name="radioInline">
+						<label for="inlineRadio1"> Text </label>
+					</div>
+					<div class="radio radio-inline">
+						<input type="radio" id="inlineRadio2" value="sendDMlink" name="radioInline">
+						<label for="inlineRadio2"> Link </label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-body">
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1">
+				<i class="fas fa-external-link-alt mr-2"></i> ID LINK </span>
+			<input type="text" class="form-control idusergen" placeholder="Generator Link Id">
+			<span class="input-group-text" id="basic-addon1">
+				<i class="fas fa-external-link-alt mr-2"></i> CANONICAL URL </span>
+			<input type="text" class="form-control canonical" placeholder="Custom Url Canonical">
+			<span class="input-group-text" id="basic-addon1">
+				<i class="fas fa-image mr-2"></i> IMG URL </span>
+			<input type="text" class="form-control customimage" placeholder="Custom image url branch">
+		</div>
+	</div>
+</div>
+<div class="card-group mb-2 pred">
+	<div class="card shadow text-center">
+		<div class="card-header py-3 text-uppercase h5">
+			<i class="fas fa-users"></i> UID || <i class="fas fa-lock"></i> PASSWORD
+		</div>
+		<div class="card-body">
+			<textarea class="form-control uid" cols="10" rows="10" placeholder="UID / PASSWORD"></textarea>
+		</div>
+	</div>
+	<div class="card shadow text-center">
+		<div class="card-header py-3 text-uppercase h5">
+			<i class="fas fa-code-branch"></i> KEY_LIVE || <i class="fas fa-comment-dots"></i> COMMENT || <i class="fas fa-quote-right"></i> TEXT
+		</div>
+		<div class="card-body">
+			<textarea class="form-control commit" cols="10" rows="10" placeholder="KEY_LIVE / COMMENT / TEXT DM"></textarea>
+		</div>
+	</div>
+</div>
+<div class="card shadow text-center mb-2 kuki">
+	<div class="card-header py-3 text-uppercase h5">
+		<i class="fas fa-cookie-bite"></i> SESSION AUTH COOKIE
+	</div>
+	<div class="card-body">
+		<textarea class="form-control cookiesid" cols="10" rows="10" placeholder="Session Cookie Result"></textarea>
+	</div>
+</div>
+<div class="alert alert-dark">
+	<i class="fas fa-bug"></i>
+	<span class="consolelog text-uppercase"> DEBUG LOGGING</span>
+</div>
+<!--Modal-->
+<div class="modal fade" id="editprofile" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">
+					<i class="fas fa-user-cog"></i> Edit Profile
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="input-group mb-1">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">Full Name</span>
+					</div>
+					<input type="text" class="form-control fullname" placeholder="Full name" readonly>
+				</div>
+				<div class="input-group mb-1">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">Username</span>
+					</div>
+					<input type="text" class="form-control usernameprofile" placeholder="Username" readonly>
+				</div>
+				<div class="input-group mb-1">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">Bio</span>
+					</div>
+					<textarea class="form-control biograpfy" cols="5" rows="5" placeholder="Biography"></textarea>
+				</div>
+				<div class="input-group mb-1">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">Url</span>
+					</div>
+					<input type="url" class="form-control websiteLink" placeholder="Bio Website">
+				</div>
+				<div class="input-group mb-1">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">Email</span>
+					</div>
+					<input type="text" class="form-control ikiemail" placeholder="Email" readonly>
+				</div>
+			</div>
+			<div class="modal-footer mx-auto">
+				<button type="button" class="btn inbtn editaccount">Simpan Profile</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Modal-->
+<!--Modal Poto-->
+<div class="modal fade" id="editphoto" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">
+					<i class="fas fa-user-cog"></i> Ganti Profile
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<input type="file" class="form-control-file changepict mb-3">
+					<p class="base64" style="display: none;"></p>
+					<img src="https://i.ibb.co/sq8KkFS/profile-blank.jpg" width="450" height="450" class="img_preview rounded mx-auto d-block">
+				</div>
+			</div>
+			<div class="modal-footer mx-auto">
+				<button type="button" class="btn inbtn uploadimage">Upload Photo</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Modal Poto-->
